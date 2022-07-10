@@ -1,0 +1,27 @@
+
+Assembly Order
+ - Surface Mount Resistors
+ - Ceramic caps first, the solder points are below sockets on the top side.
+ - IC Sockets
+ - Diodes and Ferrite Beads
+ - Polarized Caps
+ - 2x5 Socket
+ - 7805 Regulator
+ - Jacks, aligned to panel.
+
+V1 (with 1k buffer resistors) Current Draw:
+ +12V Rail, 21mA
+ -12V Rail, 7mA
+
+
+
+V2 changes to make:
+ - Use better footprint for polarized caps.
+ - Fix missing cap values - done.
+ - Fix Gain of inverted filtered white noise, it's -1 it should be -2 to get actual inversion of other output.
+ - Change all the resistors on buffers to 10k or 100k to reduce current. - done
+ - Add alternate 7805 footprint for T0-92 or surface mount.
+
+
+Front Panel Notes. 
+Inverted filt on v2 is 0:-10V not 0:10V -fixed in latest
